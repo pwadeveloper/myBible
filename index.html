@@ -138,7 +138,7 @@
                             <h1>My Bible</h1>
                             <p>My Bible, is a personalized Bible application tailored towards individuals and couples, bringing a more personalized touch to the word.</p>
                             <a href="#" class="btn">Download App</a>
-                             <a href="#features" class="btn">Order Physical Copy</a>
+                             <a href="#features" class="btn" data-toggle="modal" data-target="#modalLoginForm">Order Physical Copy</a>
                         </div>
                         <!-- banner text -->
                     </div>
@@ -655,6 +655,48 @@
         </div>
         
     </footer>
+
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold order">Order Books</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+           
+            <input type="text" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-yourname">Your Name</label>
+          </div>
+  
+          <div class="md-form mb-4">
+            
+            <input type="text" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-spousename">Your Spouse Name</label>
+          </div>
+
+          <div class="md-form mb-4">
+           
+            <input type="number" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-spousename">Number of Copies</label>
+          </div>
+  
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default btncolor">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
 
     <!-- back to top -->
     <div class="back-to-top">
